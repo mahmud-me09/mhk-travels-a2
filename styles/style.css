@@ -162,7 +162,8 @@ padding-bottom: 24px;
     "srilanka north-america kashmir"
     "bangladesh bandarban"; */
     gap: 24px;
-    margin-bottom:24px
+    margin-bottom:24px;
+    flex-wrap: wrap;
 }
 .image{
     position:relative;
@@ -189,6 +190,7 @@ padding-bottom: 24px;
     display: flex;
     gap:24px;
     margin-bottom:24px;
+    flex-wrap: wrap;
 }
 .srilanka h1, .north-america h1{
     left:150px;
@@ -205,6 +207,7 @@ padding-bottom: 24px;
 .row-image-3{
     display: flex;
     gap:24px;
+    flex-wrap: wrap;
 }
 .bangladesh h1{
     left:170px;
@@ -382,4 +385,115 @@ padding-bottom: 24px;
 .copyright{
     padding-top:100px;
 }
+.hide{
+    display:none;
+}
+@media screen and (max-width:992px) and (max-width: 600px){
+    .header{
+        width:100%;
+    }
 
+    nav{
+        display:none;
+    }
+    .banner, 
+    .input-field{
+        width:90%;
+        margin: 20px auto;
+        padding-top: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin:20px; */
+    }
+    .banner h1{
+        text-align: center;
+        font-size: 22px;
+    }
+    .input-field{
+        width: 335px;
+        /* border: 1px solid red; */
+    }
+    .field input{
+        width:100%;
+    }
+    .tour-section{
+        flex-direction: column;
+        width: 90%;
+    }
+    .tour{
+        padding-bottom:20px
+    }
+    .tour-section div img{
+        width:100%;
+    }
+    .image-section{
+        width:90%;
+        flex-direction: column;
+    }
+    .image-container{
+        width:100%;
+        flex-direction: column;
+    }
+    .image-section p{
+        width: 100%;
+    }
+    .row-image-1, .row-image-2, .row-image-3{
+        flex-direction: column;
+    }
+    .row-image-1 img, .row-image-2 img, .row-image-3 img{
+        width:100%;
+    }
+    .maldeves h1{
+        right:140px;
+    }
+    .indonesia h1{
+        right:140px
+    }
+    .srilanka img{
+        width:fit-content;
+    }
+    .brand-section{
+        width: 90%;
+    }
+    .brand-section p{
+        width:100%
+    }
+    .video-section{
+        flex-direction: column;
+        width:90%;
+    }
+    .video-section iframe{
+        width:100%;
+    }
+    .contact-section{
+        flex-direction: column;
+        width: 90%;
+    }
+    .form{
+        width:100%;
+    }
+    .contact-banner{
+        width:100%;
+    }
+    .contact-banner-img img{
+        width: 100%;
+    }
+    .footer{
+        width:100%;
+    }
+    .footer p{
+        width:90%;
+        text-align: center;
+    }
+    .copyright{
+        margin: 10px auto;
+        padding:10px auto;
+    }
+    .footer img{
+        margin-bottom:10px;
+        padding-bottom: 10px;
+    }
+
+}
